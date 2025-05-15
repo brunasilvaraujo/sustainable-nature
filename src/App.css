@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #DCE9E2;
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+}
+
+/* HEADER*/
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+
+/* Menu */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  left: 72px;
+  padding: 16px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f5210;
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+  max-width: 100%;
+}
+
+.nav-list ul {
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #0f5210;
+  font-size: 16px;
+}
+.nav-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-list li:hover {
+  color: #0f5210;
+  font-weight: 700;
+}
+.nav-list li:active {
+  color: #0f5210;
+  font-weight: 700;
+}
+
+.nav-link {
+position: relative;
+text-decoration: none; /* Remove underline padrão */
+}
+
+.nav-link::after {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 2px; /* Espessura da sublinha */
+background-color: #0f5210; /* Cor da sublinha */
+transform: scaleX(0); /* Inicialmente escondido */
+transition: transform 0.3s ease; /* Animação suave */
+margin-bottom: -25px;
+}
+
+.nav-link:hover::after {
+transform: scaleX(1); /* Exibe a sublinha ao passar o mouse */
+margin-bottom: -25px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.bi {
+  font-size: 32px;
+  color: #0f5210;
+}
