@@ -14,15 +14,17 @@ body {
 
 .App {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* HEADER*/
 
 .header {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   justify-content: space-around;
-  
+  position: relative;
 }
 
 /* Menu */
@@ -31,16 +33,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
-  left: 72px;
-  padding: 16px;
+  width: 1333px;
+  height: 72px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
 }
 
 .logo-text {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px;
   color: #0f5210;
-  display: flex;
+  font-weight: 700;
 }
 
 .nav-list {
@@ -102,5 +113,128 @@ margin-bottom: -25px;
 
 .bi {
   font-size: 32px;
+  color: #0f5210;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 672px; /* ocupa toda a altura da tela */
+  background-color: #DCE9E2; /* cor de fundo opcional */
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 1333px;
+  width: 100%;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 72px;
+  margin-bottom: 8px;
+  color: #0f5210;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hero-button:hover {
+  background-color: #218838;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 100%;
+  width: 420px;
+  height: 547px;
+}
+
+.hero-number {
+  position: absolute;
+  content: "";
+  height: 210px;
+  width: 1260px;
+  padding: 8px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 225%);
+  background-color: #FFFAF1;
+  color: #0f5210;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-number-content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}	
+
+.hero-number-separator-1 {
+  width: 2px;
+  height: 100px;
+  margin-top: 50px;
+  background-color: #0f5210;
+}
+
+.hero-number-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-number-separator-2 {
+  width: 2px;
+  height: 100px;
+  margin-top: 50px;
+  background-color: #0f5210;
+}
+
+.hero-number-content-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-number-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0f5210;
+}
+
+.hero-number-label {
+  font-size: 18px;
   color: #0f5210;
 }

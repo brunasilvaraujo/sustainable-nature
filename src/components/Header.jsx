@@ -5,7 +5,10 @@ function Header() {
     return (
         <header className="header">
             <Nav variant="underline" defaultActiveKey="/home" className="nav-menu">
-                <p className="logo-text">My Logo</p>
+                <div className="nav-logo">
+                    <img className="logo" src="/assets/save-planet.png" alt="Logo" />
+                    <p className="logo-text">Save Planet</p>
+                </div>
                 <ul className="nav-list">
                     <Nav.Item>
                         <li><Nav.Link href="/home" className='nav-link'>Home</Nav.Link></li>
