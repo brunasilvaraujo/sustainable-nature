@@ -3,7 +3,7 @@ function About() {
         <section id="about" className="about">
             <div className="container">
                 <div className="about-container">
-                    <img className="about-image" src="/assets/saveThePlanet.jpg" alt="Salvar o Planeta" />
+                    <img className="about-image" src="assets/saveThePlanet.jpg" alt="Salvar o Planeta" />
                     <div className="about-content">
                     <h3 className="about-subtitle">Sobre nós</h3>
                     <h1 className="about-title">Salvar o Planeta</h1>
