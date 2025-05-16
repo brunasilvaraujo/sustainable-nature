@@ -1,9 +1,10 @@
 function About() {
     return (
-        <>
-            <section className="about">
-                <img className="about-image" src="/assets/saveThePlanet.jpg" alt="Salvar o Planeta" />
-                <div className="about-content">
+        <section className="about">
+            <div className="container">
+                <div className="about-container">
+                    <img className="about-image" src="/assets/saveThePlanet.jpg" alt="Salvar o Planeta" />
+                    <div className="about-content">
                     <h3 className="about-subtitle">Sobre nós</h3>
                     <h1 className="about-title">Salvar o Planeta</h1>
                     <p className="about-description">Junte-se a nós na luta pela preservação do meio ambiente e pela promoção da sustentabilidade.
@@ -13,9 +14,10 @@ function About() {
                         Nossa equipe é composta por apaixonados pela natureza, prontos para compartilhar dicas, 
                         informações e projetos que visam a proteção do meio ambiente.
                     </p>
+                    </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }
 

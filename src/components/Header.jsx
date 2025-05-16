@@ -4,7 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 function Header() {
     return (
         <header className="header">
-            <Nav variant="underline" defaultActiveKey="/home" className="nav-menu">
+            <div className='container'>
+                <Nav variant="underline" defaultActiveKey="/home" className="nav-menu">
                 <div className="nav-logo">
                     <img className="logo" src="/assets/save-planet.png" alt="Logo" />
                     <p className="logo-text">Save Planet</p>
@@ -27,7 +28,8 @@ function Header() {
                     <a href=""><i class="bi bi-facebook"></i></a>
                     <a href=""><i class="bi bi-instagram"></i></a>
                 </span>
-            </Nav>
+                </Nav>
+            </div>
         </header>
 )}
 
