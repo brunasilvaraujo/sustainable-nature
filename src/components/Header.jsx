@@ -35,7 +35,7 @@ function Header() {
             <div className='container d-block'>
                 <Nav className="nav-menu" >
                     <div className="nav-logo">
-                        <img className="logo" src="/assets/save-planet.png" alt="Logo" />
+                        <img className="logo" src="assets/save-planet.png" alt="Logo" />
                         <p className="logo-text mb-md-0">Save Planet</p>
                     </div>
                     <ul className="nav-list mb-md-0">
