@@ -14,6 +14,8 @@ function Hero() {
                         </button>
                     </div>
                     <img className="hero-image" src="/assets/plant-save.png" alt="Mãos juntas segurando broto de árvore" />
+                </div>
+                <div className="hero-info">
                     <div className="hero-number">
                         <div className="hero-number-content-1">
                             <p className="hero-number-value">+3.500</p>

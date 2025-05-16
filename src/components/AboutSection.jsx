@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="container">
                 <div className="about-container">
                     <img className="about-image" src="/assets/saveThePlanet.jpg" alt="Salvar o Planeta" />
