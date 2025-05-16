@@ -18,7 +18,7 @@ function Contact() {
                             Enviar Mensagem
                         </button>
                     </div>
-                    <img  className="contact-image" src="/assets/contact.jpg" alt="Contato" />
+                    <img  className="contact-image" src="assets/contact.jpg" alt="Contato" />
                 </div>
             </div>
         </section>
