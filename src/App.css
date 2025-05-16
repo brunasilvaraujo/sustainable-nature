@@ -33,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1333px;
+  width: 1233px;
   height: 72px;
 }
 
@@ -131,7 +131,7 @@ margin-bottom: -25px;
 .hero-content {
   display: flex;
   align-items: center;
-  max-width: 1333px;
+  max-width: 1233px;
   width: 100%;
   gap: 20px;
 }
@@ -140,8 +140,15 @@ margin-bottom: -25px;
   flex: 1;
 }
 
+.head-text{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #177e18;
+}
+
 .hero-title {
-  font-size: 72px;
+  font-size: 52px;
   margin-bottom: 8px;
   color: #0f5210;
 }
@@ -177,7 +184,6 @@ margin-bottom: -25px;
 
 .hero-number {
   position: absolute;
-  content: "";
   height: 210px;
   width: 1260px;
   padding: 8px;
@@ -185,6 +191,7 @@ margin-bottom: -25px;
   left: 50%;
   transform: translate(-50%, 225%);
   background-color: #FFFAF1;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   color: #0f5210;
   display: flex;
   justify-content: space-evenly;
@@ -237,4 +244,89 @@ margin-bottom: -25px;
 .hero-number-label {
   font-size: 18px;
   color: #0f5210;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1082px;
+  background-color: #F7F9F9;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1233px;
+  width: 100%;
+  gap: 20px;
+}
+
+.services-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 497px;
+}
+
+.services-text {
+  margin-top: 161px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #177e18;
+}
+
+.services-title {
+  font-size: 40px;
+  color: #0f5210;
+  font-weight: bold;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 347px;
+  height: 207px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  font-size: 24px;
+  color: #0f5210;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #0f5210;
+}
+
+.card-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
 }

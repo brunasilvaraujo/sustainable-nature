@@ -11,13 +11,16 @@ function Header() {
                 </div>
                 <ul className="nav-list">
                     <Nav.Item>
-                        <li><Nav.Link href="/home" className='nav-link'>Home</Nav.Link></li>
+                        <li><Nav.Link href="/home" className='nav-link'>Início</Nav.Link></li>
                     </Nav.Item>
                     <Nav.Item>
-                        <li><Nav.Link href="/about" className='nav-link'>About</Nav.Link></li>
+                        <li><Nav.Link href="/about" className='nav-link'>Sobre</Nav.Link></li>
                     </Nav.Item>
                     <Nav.Item>
-                        <li><Nav.Link href="/contact" className='nav-link'>Contact</Nav.Link></li>
+                        <li><Nav.Link href="/services" className='nav-link'>Serviços</Nav.Link></li>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <li><Nav.Link href="/contact" className='nav-link'>Contato</Nav.Link></li>
                     </Nav.Item>
                 </ul>
                 <span className="social-icons">

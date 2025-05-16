@@ -3,8 +3,10 @@ function Hero() {
         <section className="hero">
             <div className="hero-content">
                 <div className="hero-text">
-                    <h1 className="hero-title">Plante uma árvore</h1>
-                    <p className="hero-description">Ajude a salvar o planeta, plante uma árvore e faça a diferença!</p>
+                    <p className="head-text">Bem-Vindos a Save Planet 👋</p>
+                    <h1 className="hero-title">Plante uma árvore, ajude a salvar o Planeta.</h1>
+                    <p className="hero-description">Junte-se a nós nessa causa! 
+                        Descubra como pequenas atitudes podem preservar o meio ambiente e garantir um futuro melhor para todos.</p>
                     <button className="hero-button">
                         <i className="bi bi-arrow-right"></i>
                         <span>Começar</span>
