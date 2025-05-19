@@ -13,7 +13,7 @@ function Hero() {
                             <span>Começar</span>
                         </button>
                     </div>
-                    <img className="hero-image" src="/assets/plant-save.png" alt="Mãos juntas segurando broto de árvore" />
+                    <img className="hero-image" src="assets/plant-save.png" alt="Mãos juntas segurando broto de árvore" />
                 </div>
                 <div className="hero-info">
                     <div className="hero-number">

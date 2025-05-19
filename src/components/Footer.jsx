@@ -4,7 +4,7 @@ function Footer() {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-logo">
-                        <img className="logo-image" src="/assets/save-planet.png" alt="Logo" />
+                        <img className="logo-image" src="assets/save-planet.png" alt="Logo" />
                         <p className="footer-logo-text">Save Planet</p>
                         <p className="footer-text">© 2025 Save Planet. <br /> Todos os direitos reservados.</p>
                     </div>
