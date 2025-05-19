@@ -6,21 +6,29 @@
 
 #root {
   background-color: #DCE9E2;
+  display: flex;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
 }
 
-#home {
+.home {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
+  max-width: 1120px;
 }
 
 .container {
-  width: 100%;
-  max-width: 1121px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -56,8 +64,8 @@ body {
 .nav-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 72px;
+  justify-content: space-between;
 }
 
 .nav-logo {
@@ -75,6 +83,7 @@ body {
   font-size: 24px;
   color: #0f5210;
   font-weight: 700;
+  margin-left: 20px;
 }
 
 .nav-list {
@@ -109,7 +118,8 @@ body {
 
 .nav-link {
 position: relative;
-text-decoration: none; 
+text-decoration: none;
+color: #0f5210; 
 }
 
 .nav-link::after {
@@ -162,11 +172,13 @@ margin-bottom: -25px;
   gap: 20px;
 }
 
-.hero-text {
-  flex: 1;
+.hero-info {
+  display: flex;
+  justify-content: center;
 }
 
 .head-text{
+  flex: 1;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -205,8 +217,8 @@ margin-bottom: -25px;
   flex: 1;
   max-width: 100%;
   width: 420px;
-  height: 480px;
-  margin-top: 70px;
+  height: 380px;
+  margin-top: 165px;
 }
 
 .hero-number {
@@ -285,7 +297,7 @@ margin-bottom: -25px;
   flex-direction: column;
   background-color: #F7F9F9;
   height: 1082px;
-  width: 100%;
+  width: 100vw;
   gap: 20px;
 }
 
@@ -532,191 +544,137 @@ margin-bottom: -25px;
   color: #FFFFFF;
 }
 
-.hamburger {
-  width: 30px;
-  height: 25px;
-  position: relative;
+.custom-toggler {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
   background: none;
   border: none;
+  font-size: 28px;
   cursor: pointer;
-  z-index: 1001;
+  transition: color 0.3s ease;
+  padding: 0;
 }
 
-.hamburger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: #0f5210;
-  border-radius: 3px;
-  transition: all 0.3s ease-in-out;
-}
+/* Media Queries */
 
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(15px);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-15px);
-}
-
-.header.scrolled .hamburger span {
-  background: white;
-}
-
-.navbar-collapse {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-.navbar-collapse.show {
-  max-height: 500px; 
-  opacity: 1;
-}
-
-/* =================== RESPONSIVO GERAL =================== */
-
-@media (max-width: 991px) {
-
-  body {
-    font-size: 16px;
-    padding-top: 72px;
-  }
-
-  .container {
-    padding: 0 20px;
-  }
+@media (min-width: 481px) and (max-width: 767px) {
 
   .header {
-    padding: 10px 20px;
-    height: 72px;
+    height: 80px;
   }
 
-  .nav-logo {
-    gap: 8px;
+  .header.scrolled {
+    background-color: #28a745;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .logo {
-    width: 28px;
-    height: 28px;
+  .header.scrolled .nav-link,
+  .header.scrolled .logo-text,
+  .header.scrolled .bi {
+    color: #FFFFFF;
+  }
+  
+  .header.scrolled .nav-link::after {
+    background-color: #FFFFFF;
   }
 
-  .logo-text {
-    font-size: 20px;
-  }
-
-  .hero-section, .about-section, .services-section, .contact-section {
-    padding: 60px 0;
-    text-align: center;
+  .hero {
+    height: 100vh;
   }
 
   .hero-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-
-  .hero-info{
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .hero-image {
-    max-width: 300px;
-  }
-
-  .hero-number {
-    justify-content: space-evenly;
-    width: 900px;
+    width: 100vw;
+    gap: 20px;
+    height: 100vh;
+    margin-top: 220px;
   }
 
   .hero-text {
-    max-width: 100%;
+    flex: 1;
+    text-align: center;
+  } 
+
+  .hero-image {
+    width: 350px;
+    height: 400px;
   }
 
-  .hero-content h1,
-  .about-container h2,
-  .services-cards h2,
-  .contact-section h2 {
-    font-size: 28px;
-  }
-
-  .hero-content p,
-  .about-container p,
-  .services-cards p,
-  .contact-section p {
-    font-size: 16px;
-  }
-
-  .services-container {
-    height: 1188px;
-  }
-
-  .about {
-    height: 834px;
-  }
-
-  .about-container {
+  .hero-number {
+    height: 150px;
+    width: 100%;
     flex-direction: column;
-  }
-
-  .about-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .navbar-collapse {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    background: #28a745;
-    padding: 1rem 2rem;
-    z-index: 1000;
-    border-top: 1px solid #ffffff33;
-    border-bottom: 1px solid #ffffff33;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-list {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
   }
 
-  .nav-list .nav-link {
-    color: white !important;
-    font-size: 18px;
-    transition: color 0.3s;
+  .hero-number-content-1,
+  .hero-number-content-2,
+  .hero-number-content-3 {
+    flex-direction: row;
+    gap: 10px;
   }
 
-  .nav-list .nav-link:hover {
-    color: #cde3cd !important;
+  .services-container {
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+  .custom-toggler {
+    display: block;
+    color: #28a745;
+    position: relative;
+    z-index: 1051; 
   }
 
-  .social-icons {
-    margin-top: 1rem;
-    justify-content: center;
+  .header.scrolled .custom-toggler {
+    color: #fff;
   }
 
-  .social-icons .bi {
-    color: white !important;
+  .custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: #28a745;
+      padding: 1rem 2rem;
+      position: absolute;
+      top: 56px; 
+      left: 0;
+      right: 0;
+      z-index: 1050;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #0f5210;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #154d0f;
+    }
   }
 }
