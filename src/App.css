@@ -710,7 +710,7 @@ margin-bottom: -25px;
   }
 
   .hero-number-value {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .hero-number-label {
@@ -759,13 +759,42 @@ margin-bottom: -25px;
   }
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+@media (max-width: 576px) {
+
+  .hero {
+    margin-top: 130px;
+    padding-top: 4rem;
+    height: 775px;
   }
-  
+
+  .hero-content {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .hero-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .hero-title {
     font-size: 2.25rem;
+  }
+
+  .hero-number {
+    padding: 1rem;
+    flex-direction: column;
+    bottom: -25rem;
+  }
+
+  .hero-number-content-1,
+  .hero-number-content-2,
+  .hero-number-content-3 {
+    padding: 1rem;
   }
 
   .hero-number-separator-1 {
@@ -781,9 +810,18 @@ margin-bottom: -25px;
   .contact-title {
     font-size: 2rem;
   }
+
+  .services-header {
+    margin-top: 220px;
+  }
   
   .card {
     width: 90%;
+  }
+
+  .contact-content {
+    align-items: center;
+    text-align: center;
   }
 }
 
