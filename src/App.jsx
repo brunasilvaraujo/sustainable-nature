@@ -14,7 +14,7 @@ function App() {
     <div className="home">     
       <Header />
       <Hero />
-      <div style={{ marginTop: '90px' }}>
+      <div style={{ marginTop: '200px' }}>
         <Services />
         <About />
         <Contact />
